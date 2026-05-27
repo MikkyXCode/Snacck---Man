@@ -21,16 +21,20 @@
         <h1>Start</h1>
     </div>
 
+    <!-- gameover screen section added to the HTML -->
+    <div id="gameOverScreen" style="display:none;">
+        <h1 id="gameOverMessage"></h1>
+        <p id="finalScore"></p>
+        <input type="text" id="nameInput" placeholder="Enter your name" maxlength="12" />
+        <button id="saveScoreBtn">Save Score</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <!-- editted the leaderboard section so it can be populated by the script -->
     <div class="leaderboard">
         <h1>LeaderBoard:</h1>
-        <ol>
-            <li>Chris........100</li>
-            <li>Mark.........75</li>
-            <li>Tom..........50</li>
-            <li>John.........45</li>
-            <li>John2........40</li>
-            <li>John3........35</li>
-        </ol>
+        <ol id="leaderboardList"></ol>
+
     </div>
 
     <main>
@@ -38,11 +42,7 @@
 
     <div class="lives">
         <h1>Lives:</h1>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+        <ul id="livesList"></ul>
     </div>
 
     <div class="score">
